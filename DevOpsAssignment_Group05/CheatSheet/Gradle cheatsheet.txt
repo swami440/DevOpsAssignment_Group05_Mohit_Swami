@@ -10,3 +10,46 @@ Run tests:  gradle test
 
 Assemble the outputs without running tests:  gradle assemble
 
+### Project Configuration
+
+Initialize a new Gradle project:  gradle init
+
+Generate Gradle wrapper files:    gradle wrapper
+
+Display project properties:       gradle properties   
+
+Display the Gradle version:       gradle --version
+
+
+ ### Dependency Management
+
+Display project dependencies:    gradle dependencies
+
+Provide insight into a specific dependency:  gradle dependencyInsight --dependency junit
+
+Refresh dependencies:   gradle build --refresh-dependencies
+
+
+
+###  Build Configuration
+
+Exclude tests from the build:   gradle build -x test
+
+Run tasks in parallel:   gradle build --parallel
+
+Continue building even if some tasks fail:  gradle build --continue
+
+Create a build scan report:  gradle build --scan
+
+
+### Running Specific Tasks
+
+Run a specific task with info logging:  gradle test --info
+
+Run a task with debug logging:  gradle test --debug
+
+Show stacktrace for errors during task execution:  gradle test --stacktrace
+
+Run a task without rebuilding:   gradle test --no-rebuild
+
+Use the build cache for a custom task: gradle myCustomTask --build-cache
